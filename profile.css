@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #1c1c1c;
+    line-height: 1.6;
+}
+
+header {
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Profile Section */
+.profile-container {
+    display: flex;
+    
+    justify-content: space-between; /* Image on the left, content on the right */
+    align-items: center;
+    padding: 4rem 10%;
+    height: calc(100vh - 80px); /* Adjust to fit within viewport */
+}
+
+.profile-content {
+    max-width: 50%; /* Restrict content width */
+    text-align: left; /* Ensure left-aligned text */
+}
+
+.profile-content h1 {
+    font-size: 1.5rem;
+    color: #bbb;
+    margin-bottom: 0.5rem;
+}
+
+.profile-content h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.profile-content h3 {
+    font-size: 2rem;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.profile-content p {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 2rem;
+}
+
+.profile-content .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #32cd32;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.profile-content .btn:hover {
+    background: #28a428;
+    color: #fff;
+}
+
+.profile-image {
+    flex-basis: 45%; /* Allocate 45% of the container for the image */
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start; /* Align the image to the top */
+    margin-top: 0; /* Ensure no extra margin at the top */
+}
+
+.profile-image img {
+    width: 90%; /* Scale the image proportionally */
+    height: auto;
+    border-radius: 10px; /* Add slight rounding to match the design style */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.profile-image img:hover {
+    filter: grayscale(0%);
+}
